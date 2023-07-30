@@ -1,28 +1,3 @@
-/* let persona = {
-    nombre: 'Carlos',
-    edad: 23,
-    casado: false,
-    saludar: function(){
-        return 'Holaa!';
-    },
-    padres: {
-        padre: 'Juan',
-        madre: 'María'
-    }
-}
-
-let Carlos = {
-    id: 01,
-    nombres: "Carlos Antonio Moncada Velasquez",
-    apellidos: false,
-    telefono: false,
-    ubicaciones: {
-        ciudad: 'Juan',
-        direccion: 'María'
-    }
-} */
-
-// console.log(persona);
 
 let lstCont = [
   {
@@ -106,9 +81,7 @@ imprimirContacto(lstCont);
 function eliminarContacto(contacto) {
   const index = lstCont.findIndex((lstCont) => lstCont.alias == contacto);
   lstCont.splice(index, 1);
-  console.log(index);
 }
 
 eliminarContacto("Pedro Banegas");
 imprimirContacto(lstCont);
-
