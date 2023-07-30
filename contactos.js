@@ -85,3 +85,12 @@ function eliminarContacto(contacto) {
 
 eliminarContacto("Pedro Banegas");
 imprimirContacto(lstCont);
+
+function actualizarContacto(contacto, propiedades) {
+  const index = lstCont.findIndex((lstCont) => lstCont.alias === contacto);
+    const actualizado = Object.assign(lstCont[index], propiedades);
+    console.log(actualizado);
+}
+
+actualizarContacto("Andrea Mendoza", { alias: "Andrea M.", telefono: 98765432 });
+imprimirContacto(lstCont);
